@@ -1,4 +1,3 @@
-import re
 str = """Alabama
 Birmingham
 Montgomery
@@ -349,15 +348,6 @@ Laramie
 Gillette
 Rock Springs
 Sheridan"""
-
-tripCityRegex = re.compile(r'\w+(?:(?!\n)\s)\w+(?:(?!\n)\s)\w+')
-dubCityRegex = re.compile(r'\w+(?:(?!\n)\s)\w+')
-cityRegex = re.compile(r'\w+')
-
-
-cities = cityRegex.findall(str)
-dubCities = dubCityRegex.findall(str)
-tripCities = tripCityRegex.findall(str)
 
 count = 0
 stateCount = 1
