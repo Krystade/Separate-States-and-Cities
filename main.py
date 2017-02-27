@@ -349,15 +349,11 @@ Gillette
 Rock Springs
 Sheridan"""
 
+
 count = 0
-stateCount = 1
-print(1)
 for i in str.splitlines():
     count += 1
-    if count == 8:
-        print()
-        stateCount += 1
-        print(stateCount)
-        count = 1
-    print(count,end='')
-    print (". " + i)
+    print("[\"" + i + "\"] ",end= "")
+    if count == 7:
+        print('\n')
+        count = 0
